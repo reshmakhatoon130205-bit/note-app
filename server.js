@@ -2,10 +2,10 @@ const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
-const path = require('path');
 
 const app = express();
-const DATA_FILE = path.join(__dirname, 'data', 'notes.json');
+const DATA_FILE = path.join(__dirname, 'data.json'); // Fixed to double underscore
+
 
 // Middleware
 app.use(cors());
